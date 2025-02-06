@@ -51,6 +51,8 @@ OS-Copilot is an open-source library to build generalist agents capable of autom
 
 2. **Set Up Python Environment and Install Dependencies:**
 
+**IMPORTANT**: Before running `pip install`, first comment out the line `pysqlite3`, otherwise the default `sqlite3` will be it, which causes trouble during compilation. (Zhifeng Jiang)
+
    ```
    conda create -n oscopilot_env python=3.10 -y
    conda activate oscopilot_env
